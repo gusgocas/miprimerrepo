@@ -1,0 +1,40 @@
+.navbar{
+    height: 80px;
+}
+
+.navbar-brand img{
+    height: 60px;
+}
+
+.navbar-brand span{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.jumbotron{
+    background-image: url(img/jumbotron_g.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (min-width:0px) and (max-width:576px) {
+    .navbar-collapse{
+        background-color: darkgray;
+        display: flex;
+        justify-content: center !important;
+    } 
+}
+
+h1{
+    color:antiquewhite;
+}
+
+.jumbotron p{
+    color: blanchedalmond;
+}
+
+.card{
+    align-content: space-between !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    justify-items: flex-start !important;
+}
