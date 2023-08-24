@@ -32,9 +32,21 @@ h1{
     color: blanchedalmond;
 }
 
-.card{
-    align-content: space-between !important;
-    align-items: flex-start !important;
-    justify-content: space-between !important;
-    justify-items: flex-start !important;
+/* Inicio footer */
+
+.footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
+.footer-iconos{
+    margin-top: 10px;
+}
+.footer-iconos a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Fin footer */
