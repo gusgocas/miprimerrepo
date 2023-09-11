@@ -59,7 +59,7 @@
         <div class="collapse navbar-collapse d-flex justify-content-center">
           <ul class="nav justify-content-center">
             <li class="nav-item item-1">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item item-2">
               <a class="nav-link" href="./bio.html">Bio</a>
@@ -80,10 +80,36 @@
     <!-- Navbar termina -->
 
 <!-- Cutout text banner start -->
-<div class="image-cutout">
-  <div class="text-cutout">FIAT LUX</div>
+<div class="image-cutout sticky">
+  <div class="text-cutout sicky">FIAT LUX</div>
 </div>
 <!-- Cutout text banner ends -->
+
+<!-- Contact Form start -->
+<div class="container-form">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text-f" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text-f" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Colombia</option>
+        <option value="canada">USA</option>
+        <option value="usa">Other</option>
+      </select>
+  
+      <label for="subject-f">Subject</label>
+      <textarea id="subject-f" name="subject-f" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit-f" value="Submit">
+  
+    </form>
+  </div>
+<!-- Contac Form end -->
 
   <!-- Inicias Footer -->
   <div class="container">
