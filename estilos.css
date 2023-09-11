@@ -79,13 +79,32 @@ header {
 
 /*Termina NavBar*/
 
-/*Incicia Cards*/
+/*Incicia Flip Cards*/
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 830px) {
+  .grid-container {
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+}
+
 .flip-card {
   background-color: transparent;
   width: 300px;
   height: 200px;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  vertical-align: middle;
+  perspective: 1000px;
+  display: grid;
 }
 
 .checked {
@@ -130,12 +149,6 @@ header {
   color: white;
   transform: rotateY(180deg);
 }
-
-.users-ratings{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-flow:column;
-}
 /*Termina Flip Cards*/
 
 /*texto home start*/
@@ -147,6 +160,17 @@ header {
   align-content: center;
   display:grid;
   grid-template-columns: 1fr 4fr;
+}
+
+@media screen and (max-width: 714px) {
+  .lux {
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
 }
 
 .hashtag {
@@ -179,6 +203,7 @@ header {
 
 .lux p{
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .hometext {
