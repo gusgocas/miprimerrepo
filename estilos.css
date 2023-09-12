@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-/* Inicia banner promocional*/
+/* Promotional banner start*/
 .sitewideBanner {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -19,9 +19,9 @@
   color: #000000;
   background-color: #ffdd00;
 }
-/* Termina banner promocional*/
+/* Promotional banner end */
 
-/*Inicia NavBar*/
+/* NavBar Start */
 header {
   background-color: #ffffff;
   color: #ffffff;
@@ -51,7 +51,6 @@ header {
   margin: 0 auto; 
 }
 
-/* Estilos para la barra de navegación (navbar) */
 .navbar {
   background-color: white; 
   padding: 10px;
@@ -76,17 +75,17 @@ header {
     0
   ); 
 }
+/* NavBar end */
 
-/*Termina NavBar*/
-
-/*Incicia Flip Cards*/
+/* Flip Cards start */
 .grid-container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-evenly;
+  padding: 40px 40px;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1200px) {
   .grid-container {
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
@@ -111,7 +110,6 @@ header {
   color: orange;
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -121,21 +119,18 @@ header {
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #bbb;
   color: black;
@@ -143,15 +138,14 @@ header {
   overflow: auto;
 }
 
-/* Style the back side */
 .flip-card-back {
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
 }
-/*Termina Flip Cards*/
+/* Flip Cards ends */
 
-/*texto home start*/
+/* Home text start */
 .lux {
   font-family: "Poppins", sans-serif;
   padding: 50px 40px;
@@ -224,11 +218,9 @@ header {
     font-size: 30px;
   }
 }
+/* texto home end */
 
-/*texto home end*/
-
-/* Newsletter start*/
-/* Style the form - display items horizontally */
+/* Newsletter start */
 .form-inline {
   padding: 10px 10px;
   align-items: center;
@@ -238,12 +230,10 @@ header {
   align-items: center;
 }
 
-/* Add some margins for each label */
 .form-inline label {
   margin: 5px 10px 5px 0;
 }
 
-/* Style the input fields */
 .form-inline input {
   vertical-align: middle;
   margin: 5px 10px 5px 0;
@@ -252,7 +242,6 @@ header {
   border: 1px solid #ddd;
 }
 
-/* Style the submit button */
 .form-inline button {
   padding: 10px 20px;
   background-color: dodgerblue;
@@ -307,7 +296,6 @@ header {
   color: white;
 }
 
-/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
 @media (max-width: 800px) {
   .form-inline input {
     margin: 20px 0px;
@@ -318,9 +306,9 @@ header {
     align-items: stretch;
   }
 }
-/* Newsletter end*/
+/* Newsletter end */
 
-/* ARRANCA BIO*/
+/*  BIO START */
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 .bgimg {
@@ -330,9 +318,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   background-image: url('./img/Bio_main1.jpg');
   min-height: 100%;
 }
-/* TERMINA BIO */
+/* BIO END */
 
-/* ARRANCA CONTACT */
+/* CONTACT START */
 .image-cutout {
   background-image: url("./img/cutout_banner.gif");
   background-size: cover;
@@ -365,19 +353,17 @@ div.sticky {
   font-size: 20px;
 }
 
-/* Style inputs with type="text", select elements and textareas */
 input[type=text-f], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit-f] {
   background-color: dodgerblue;
   color: white;
@@ -387,15 +373,64 @@ input[type=submit-f] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit-f]:hover {
   background-color: #ffdc17;
 }
 
-/* Add a background color and some padding around the form */
 .container-form {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
-/* TERMINA CONTACT */
+/* CONTACT END */
+
+/* PRINTS START */
+
+.header-prints {
+  text-align: center;
+  padding: 32px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* PRINTS ENDS */
