@@ -1,224 +1,405 @@
 <!DOCTYPE html>
 <html>
-<title>Gusgocas CV</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/x-icon" href="./img/logo_G.png">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('./img/Bio_main1.jpg');
-  min-height: 100%;
-}
-</style>
-<body>
-
-<!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-  <div class="bgimg"></div>
-</nav>
-
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="./index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="./prints.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Prints</a>
-    <a href="./digitals.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Digitals</a>
-    <a href="./contacts.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
-  </div>
-</nav>
-
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%">
-
-  <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
-
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>Gustavo Gómez</b></h1>
-    <p>Visual Designer / UI / Web.</p>
-    <img src="./img/grid_responsive_prints_561x953_09.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-    <img src="./img/grid_responsive_prints_561x953_10.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
-    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-  </header>
-
-  <!-- Portfolio Section -->
-  <div class="w3-padding-32 w3-content" id="portfolio">
-    <h2 class="w3-text-grey">My Portfolio</h2>
-    <hr class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="./img/grid_responsive_prints_561x375_14.jpg" style="width:100%">
-        <img src="./img/grid_responsive_prints_561x375_13.jpg" style="width:100%">
-        <img src="./img/grid_responsive_prints_561x421_12.jpg" style="width:100%">
+  <title>Gusgocas CV</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="./img/logo_G.png" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif;
+    }
+    .w3-row-padding img {
+      margin-bottom: 12px;
+    }
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("./img/Bio_main1.jpg");
+      min-height: 100%;
+    }
+  </style>
+  <body>
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width: 40%">
+      <div class="bgimg"></div>
+    </nav>
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav
+      class="w3-sidebar w3-black w3-animate-right w3-xxlarge"
+      style="display: none; padding-top: 150px; right: 0; z-index: 2"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="closeNav()"
+        class="w3-button w3-black w3-xxxlarge w3-display-topright"
+        style="padding: 0 12px"
+      >
+        <i class="fa fa-remove"></i>
+      </a>
+      <div class="w3-bar-block w3-center">
+        <a
+          href="./index.html"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Home</a
+        >
+        <a
+          href="./prints.html"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Prints</a
+        >
+        <a
+          href="./digitals.html"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Digitals</a
+        >
+        <a
+          href="./contacts.html"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Contact</a
+        >
       </div>
-
-      <div class="w3-half">
-        <img src="./img/grid_responsive_prints_561x351_03.jpg" style="width:100%">
-        <img src="./img/grid_responsive_prints_561x421_11.jpg" style="width:100%">
-        <img src="./img/grid_responsive_prints_561x561_01.jpg" style="width:100%">
-        <img src="./img/grid_responsive_prints_561x381_06.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-    <h2>About</h2>
-    <hr class="w3-opacity">
-    <p>5+ year proven track record of designing, implementing and delivering seamless digital product experiences
-        Advanced fluency in Figma or other wireframing, prototyping, and user interface tools
-        Have passion for the problem, and empathy for the users and an insatiable desire to help users succeed.
-        Embrace the swift changes and ambiguity in start-up growth phases.
-    </p>
-    <h3 class="w3-padding-16">My Skills</h3>
-    <p class="w3-wide">Illustrator</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
-    </div>
-    <p class="w3-wide">HTML & CSS</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:60%">60%</div>
-    </div>
-    <p class="w3-wide">Photoshop</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
-    </div>
-    <p class="w3-wide">Figma</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:50%">50%</div>
-    </div>
-    <p class="w3-wide">UX/UI Design</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:70%">70%</div>
-    </div>
-    <p class="w3-wide">Premier Pro</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:60%">60%</div>
-    </div>
-    <p class="w3-wide">After effects</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:70%">70%</div>
-    </div><br>
-
-    <!-- <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button> -->
-    
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web esentials</li>
-          <li class="w3-padding-16">Update site</li>
-          <li class="w3-padding-16">10 items</li>
-          <li class="w3-padding-16">RRSS content</li>
-          <li class="w3-padding-16">
-            <h2>$ 15</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-half">
-        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
-          <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Motion Graphics</li>
-          <li class="w3-padding-16">CMS</li>
-          <li class="w3-padding-16">UX/UI</li>
-          <li class="w3-padding-16">
-            <h2>$ 50</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-    <!-- End Grid/Pricing tables -->
-    </div>
-    
-  <!-- End About Section -->
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-    <h2>Contact Me</h2>
-    <hr class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Barranquilla, CO</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>Phone: +57 317-766-7725</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>Email: gusgocas@gmail.com</p>
-    </div>
-    
-    <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
-   
-    <p>Lets get in touch. Send me a message:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+    </nav>
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left: 40%">
+      <!-- Menu icon to open sidebar -->
+      <span
+        class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black"
+        style="width: auto; right: 0"
+        onclick="openNav()"
+        ><i class="fa fa-bars"></i
+      ></span>
+      <!-- Header -->
+      <header
+        class="w3-container w3-center"
+        style="padding: 128px 16px"
+        id="home"
+      >
+        <h1 class="w3-jumbo"><b>Gustavo Gómez</b></h1>
+        <p>Visual Designer / UI / Web.</p>
+        <img
+          src="./img/grid_responsive_prints_561x953_09.jpg"
+          class="w3-image w3-hide-large w3-hide-small w3-round"
+          style="display: block; width: 60%; margin: auto"
+        />
+        <img
+          src="./img/grid_responsive_prints_561x953_10.jpg"
+          class="w3-image w3-hide-large w3-hide-medium w3-round"
+          width="1000"
+          height="1333"
+        />
+        <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+          <i class="fa fa-download"></i> Download Resume
         </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>  
-  
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://gusgocas.github.io/miprimerrepo/" target="_blank" class="w3-hover-text-green">Gusgocas</a></p>
-  <!-- End footer -->
-  </footer>
-  
-<!-- END PAGE CONTENT -->
-</div>
+      </header>
+      <!-- Portfolio Section -->
+      <div class="w3-padding-32 w3-content" id="portfolio">
+        <h2 class="w3-text-grey">My Portfolio</h2>
+        <hr class="w3-opacity" />
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-half">
+            <img
+              src="./img/grid_responsive_prints_561x375_14.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="./img/grid_responsive_prints_561x375_13.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="./img/grid_responsive_prints_561x421_12.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div class="w3-half">
+            <img
+              src="./img/grid_responsive_prints_561x351_03.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="./img/grid_responsive_prints_561x421_11.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="./img/grid_responsive_prints_561x561_01.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="./img/grid_responsive_prints_561x381_06.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+      </div>
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <h2>About</h2>
+        <hr class="w3-opacity" />
+        <p>
+          Hello, I'm Gustavo Gomez Castellar, a seasoned Graphic Designer hailing from the vibrant city of Barranquilla, Colombia. With a solid foundation in visual design and a Bachelor's degree from the prestigious University of Norte, I bring more than a decade of hands-on experience to the table.
 
-<script>
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-
-</body>
+          <br>My design journey is not just about creating visually appealing graphics; it's about crafting immersive and user-centric experiences. I firmly believe in the power of "design centered on the user.<br> 
+          
+          <br>5+ implementing and delivering seamless digital product experiences. Profiency and fluency in Figma for prototyping, and user interface tools Have passion for the problem, and empathy for the users and an insatiable desire to help users succeed. Embrace the swift changes and ambiguity in start-up growth phases.<br>
+          
+          <br>My toolkit is a fusion of creativity and precision. I'm a staunch advocate for "pixel-perfect" design, adhering to the highest standards to deliver flawless results. I'm well-versed in UX/UI heuristics, employing them as guiding stars in my design process to create intuitive and engaging interfaces.<br>
+          
+          <br>In the world of Frontend development, I'm proficient in HTML5 and CSS, with a knack for Responsive Design. I harness the full potential of preprocessors like Sass and Scss, seamlessly integrating them into my workflow. Visual Studio Code is my playground, where I craft code that not only functions flawlessly but also looks great.<br>
+          
+          <br>Beyond static designs, I dive into the realm of motion graphics, breathing life into visuals to tell captivating stories. I believe that design should evoke emotions and create memorable experiences.<br>
+          
+          <br>Outside the world of design, I have a strong passion for history and art, drawing inspiration from the past to create the future. When I'm not immersed in pixels and code, you can find me on the soccer field, showcasing my skills and teamwork, or indulging in a slice of pizza, savoring life's simple pleasures.<br>
+          
+          <br>With a proficiency level of B2 in English, I'm ready to connect with clients and collaborators worldwide. I'm excited about the opportunity to bring creativity and innovation to your projects, making them not just functional but exceptional.<br>
+        </p>
+        <h3 class="w3-padding-16">My Skills</h3>
+        <p class="w3-wide">Illustrator</p>
+        <div class="w3-light-grey">
+          <div
+            class="w3-container w3-center w3-padding-small w3-dark-grey"
+            style="width: 95%"
+          >
+            95%
+          </div>
+        </div>
+        <p class="w3-wide">HTML & CSS</p>
+        <div class="w3-light-grey">
+          <div
+            class="w3-container w3-center w3-padding-small w3-dark-grey"
+            style="width: 60%"
+          >
+            60%
+          </div>
+        </div>
+        <p class="w3-wide">Photoshop</p>
+        <div class="w3-light-grey">
+          <div
+            class="w3-container w3-center w3-padding-small w3-dark-grey"
+            style="width: 85%"
+          >
+            85%
+          </div>
+        </div>
+        <p class="w3-wide">Figma</p>
+        <div class="w3-light-grey">
+          <div
+            class="w3-container w3-center w3-padding-small w3-dark-grey"
+            style="width: 50%"
+          >
+            50%
+          </div>
+        </div>
+        <p class="w3-wide">UX/UI Design</p>
+        <div class="w3-light-grey">
+          <div
+            class="w3-container w3-center w3-padding-small w3-dark-grey"
+            style="width: 70%"
+          >
+            70%
+          </div>
+        </div>
+        <p class="w3-wide">Premier Pro</p>
+        <div class="w3-light-grey">
+          <div
+            class="w3-container w3-center w3-padding-small w3-dark-grey"
+            style="width: 60%"
+          >
+            60%
+          </div>
+        </div>
+        <p class="w3-wide">After effects</p>
+        <div class="w3-light-grey">
+          <div
+            class="w3-container w3-center w3-padding-small w3-dark-grey"
+            style="width: 70%"
+          >
+            70%
+          </div>
+        </div>
+        <br />
+        <!-- Grid for pricing tables -->
+        <h3 class="w3-padding-16">My Price</h3>
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-half w3-margin-bottom">
+            <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+              <li class="w3-padding-16">Web esentials</li>
+              <li class="w3-padding-16">Update site</li>
+              <li class="w3-padding-16">10 items</li>
+              <li class="w3-padding-16">RRSS content</li>
+              <li class="w3-padding-16">
+                <h2>$ 15</h2>
+                <span class="w3-opacity">per month</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button
+                  class="w3-button w3-white w3-padding-large w3-hover-black"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="w3-half">
+            <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+              <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+              <li class="w3-padding-16">Web Design</li>
+              <li class="w3-padding-16">Motion Graphics</li>
+              <li class="w3-padding-16">CMS</li>
+              <li class="w3-padding-16">UX/UI</li>
+              <li class="w3-padding-16">
+                <h2>$ 50</h2>
+                <span class="w3-opacity">per month</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button
+                  class="w3-button w3-white w3-padding-large w3-hover-black"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- End Grid/Pricing tables -->
+        </div>
+        <!-- End About Section -->
+      </div>
+      <!-- Contact Section -->
+      <div
+        class="w3-padding-32 w3-content w3-text-grey"
+        id="contact"
+        style="margin-bottom: 64px"
+      >
+        <h2>Contact Me</h2>
+        <hr class="w3-opacity" />
+        <div class="w3-section">
+          <p>
+            <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i
+            >Barranquilla, CO
+          </p>
+          <p>
+            <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>Phone:
+            +57 317-766-7725
+          </p>
+          <p>
+            <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i
+            >Email: gusgocas@gmail.com
+          </p>
+        </div>
+        <!-- Image of location/map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15665.741892486745!2d-74.82998274458011!3d11.005917500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1694748642972!5m2!1ses!2sco" width="600" height="450" style="width: 100%; margin: 32px 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w3-image w3-greyscale"></iframe>
+        <!-- <img
+          src="/w3images/map.jpg"
+          class="w3-image w3-greyscale"
+          style="width: 100%; margin: 32px 0"
+        /> -->
+        <p>Lets get in touch. Send me a message:</p>
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="text"
+              placeholder="Email"
+              required
+              name="Email"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button
+              class="w3-button w3-light-grey w3-padding-large"
+              type="submit"
+            >
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+        <!-- End Contact Section -->
+      </div>
+      <!-- Footer -->
+      <footer
+        class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge"
+        style="margin: -24px"
+      >
+        <i class="fa fa-behance w3-hover-opacity">
+        <a href="https://www.behance.net/Gusgocas" class="link"></a>
+        </i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-github w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">
+          Powered by
+          <a
+            href="https://gusgocas.github.io/miprimerrepo/"
+            target="_blank"
+            class="w3-hover-text-green"
+            >Gusgocas</a
+          >
+        </p>
+        <!-- End footer -->
+      </footer>
+      <!-- END PAGE CONTENT -->
+    </div>
+    <script>
+      // Open and close sidebar
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "60%";
+        document.getElementById("mySidebar").style.display = "block";
+      }
+      function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
+  </body>
 </html>

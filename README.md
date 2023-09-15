@@ -1,7 +1,7 @@
 
 # Portafolio de Gustavo Gomez
 
-Este es mi sitio web personal que muestra mi portafolio de trabajo como diseñador visual. Aquí, puedes encontrar una variedad de proyectos que he realizado en diferentes áreas de diseño gráfico.
+Este es mi sitio web personal que muestra mi portafolio de trabajo como diseñador visual. Aquí, puedes encontrar una variedad de proyectos que he realizado en diferentes áreas de diseño gráfico. 
 
 ## Tecnologías Utilizadas
 
@@ -11,6 +11,7 @@ En este sitio web, he utilizado las siguientes tecnologías:
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): Utilizado para dar estilo y diseño a las páginas web.
 - [Bootstrap](https://getbootstrap.com/): Un marco de diseño CSS de código abierto que facilita la creación de sitios web receptivos y con un aspecto profesional.
 - [Sass](https://sass-lang.com/): Un preprocesador CSS que me permite escribir estilos de manera más eficiente y modular.
+- Diseño de sitio responsive, un aspecto principal dentro de este proyecto a la hora de ser visualizado desde diferentes dispositivos este se podra adaptar de manera óptima.   
 
 ## Capturas de Pantalla
 
