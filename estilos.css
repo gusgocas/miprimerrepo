@@ -1,13 +1,6 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
-} */
-*,
-*::after
-*::before{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 /* Promotional banner start*/
@@ -26,12 +19,12 @@
   color: #000000;
   background-color: #ffdd00;
 }
-/* Promotional banner end */
 
+/* Promotional banner end */
 /* NavBar Start */
 header {
-  background-color: #ffffff;
-  color: #ffffff;
+  background-color: white;
+  color: white;
   text-align: center;
 }
 
@@ -39,27 +32,29 @@ header {
   padding: 10px 20px;
   transition: background-color 0.8s;
   border-radius: 10px;
+  transition: font-size 0.3s;
 }
 
 .navbar a:hover {
-  color:#ffffff;
+  color: white;
   border-radius: 11px;
   background-color: black;
+  font-size: 18px;
 }
 
-.navbar .item-5{
-  border: 1px solid #ffdc17;
+.navbar .item-5 {
+  border: 1px solid #ffdd00;
   border-radius: 10px;
 }
 
 .logo img {
-  max-width: 100%; 
+  max-width: 100%;
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .navbar {
-  background-color: white; 
+  background-color: white;
   padding: 10px;
   text-align: center;
 }
@@ -71,22 +66,17 @@ header {
 
 .navbar ul li {
   display: inline;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 .navbar ul li a {
   text-decoration: none;
-  color: rgb(
-    0,
-    0,
-    0
-  ); 
+  color: black 0, 0, 0;
 }
 
 /* NavBar end */
-
 /* Flip Cards start */
-.grid-container{
+.grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-evenly;
@@ -103,12 +93,11 @@ header {
     align-items: center;
   }
 }
-
 .flip-card {
   background-color: transparent;
   width: 300px;
   height: 200px;
-  border: 1px solid #f1f1f1;
+  border: 1px solid white;
   vertical-align: middle;
   perspective: 1000px;
   display: grid;
@@ -135,12 +124,11 @@ header {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: white;
   color: black;
   width: 100%;
   overflow: auto;
@@ -151,8 +139,8 @@ header {
   color: white;
   transform: rotateY(180deg);
 }
-/* Flip Cards ends */
 
+/* Flip Cards ends */
 /* Home text start */
 .lux {
   font-family: "Poppins", sans-serif;
@@ -160,7 +148,7 @@ header {
   font-size: 1.4em;
   justify-content: center;
   align-content: center;
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 4fr;
 }
 
@@ -174,42 +162,41 @@ header {
     align-items: center;
   }
 }
-
 .hashtag {
   padding: 20px 0px;
   box-sizing: 50%;
 }
 
-.item1{
+.item1 {
   width: 120px;
   height: 40px;
-  color:#ffffff ;
+  color: white;
   background-color: black;
   line-height: 40px;
   text-align: center;
 }
 
-.hashtag .item1:hover{
+.hashtag .item1:hover {
   background-color: #ffdd00;
   transition: 0.2s ease-in;
   width: 120px;
   height: 120px;
-  border-radius: 100%;  
+  border-radius: 100%;
   line-height: 120px;
 }
 
-.item2{
+.item2 {
   align-items: flex-end;
   padding: 20px 0px;
 }
 
-.lux p{
+.lux p {
   flex-direction: column;
   flex-wrap: wrap;
 }
 
 .hometext {
-  font-size:x-large; 
+  font-size: x-large;
   line-height: 1.2;
   padding-left: 15%;
   align-items: center;
@@ -220,14 +207,12 @@ header {
     font-size: 80px;
   }
 }
-
 @media screen and (max-width: 600px) {
   div.example {
     font-size: 30px;
   }
 }
 /* texto home end */
-
 /* Newsletter start */
 .form-inline {
   padding: 10px 10px;
@@ -246,14 +231,14 @@ header {
   vertical-align: middle;
   margin: 5px 10px 5px 0;
   padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: white;
+  border: 1px solid #ccc;
 }
 
 .form-inline button {
   padding: 10px 20px;
   background-color: dodgerblue;
-  border: 1px solid #ddd;
+  border: 1px solid white;
   color: white;
 }
 
@@ -261,20 +246,20 @@ header {
   background-color: #ffdd00;
 }
 
-.newsletter{
+.newsletter {
   font-family: "Poppins", sans-serif;
   padding: 30px 40px;
   margin-top: 20px;
   font-size: 1.4em;
   justify-content: center;
   align-content: center;
-  background-color:rgb(228, 228, 228);
+  background-color: white b(0, 0, 0);
 }
 
-.newsletter h2{
+.newsletter h2 {
   width: 350px;
   height: 60px;
-  color:#ffffff ;
+  color: white;
   background-color: black;
   line-height: 60px;
   text-align: center;
@@ -285,7 +270,7 @@ header {
   padding: 12px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #282A35;
+  background-color: black;
   color: white;
   position: relative;
 }
@@ -300,7 +285,7 @@ header {
   text-align: center;
   border-radius: 25px;
   transform: rotate(20deg);
-  background-color: #ff9800;
+  background-color: #ffdd00;
   color: white;
 }
 
@@ -308,26 +293,30 @@ header {
   .form-inline input {
     margin: 20px 0px;
   }
-
   .form-inline {
     flex-direction: column;
     align-items: stretch;
   }
 }
 /* Newsletter end */
-
 /*  BIO START */
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+
 .bgimg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('./img/Bio_main1.jpg');
+  background-image: url("./img/Bio_main1.jpg");
   min-height: 100%;
 }
-/* BIO END */
 
+/* BIO END */
 /* CONTACT START */
 .image-cutout {
   background-image: url("./img/cutout_banner.gif");
@@ -339,7 +328,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .text-cutout {
   background-color: white;
   color: black;
-  font-size: 10vw; 
+  font-size: 10vw;
   font-weight: bold;
   margin: 0 auto;
   padding: 10px;
@@ -353,23 +342,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 }
 
 div.sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: yellow;
+  background-color: #ffdd00;
   padding: 50px;
   font-size: 20px;
 }
 
 input[type=text-f], select, textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical 
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 input[type=submit-f] {
@@ -382,18 +370,17 @@ input[type=submit-f] {
 }
 
 input[type=submit-f]:hover {
-  background-color: #ffdc17;
+  background-color: #ffdd00;
 }
 
 .container-form {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: white;
   padding: 20px;
 }
+
 /* CONTACT END */
-
 /* PRINTS START */
-
 .header-prints {
   text-align: center;
   padding: 32px;
@@ -401,17 +388,14 @@ input[type=submit-f]:hover {
   margin: 0;
 }
 
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+.row { /* IE10 */
+  display: flex; /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
+.column { /* IE10 */
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
@@ -426,7 +410,6 @@ input[type=submit-f]:hover {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
-    -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
   }
@@ -434,13 +417,10 @@ input[type=submit-f]:hover {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
 }
 /* PRINTS ENDS */
-
 /* DIGITASL START */
-
-/* DIGITAL ENDS */
+/* DIGITAL ENDS *//*# sourceMappingURL=estilos.css.map */

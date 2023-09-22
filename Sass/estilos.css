@@ -1,0 +1,442 @@
+/*# sourceMappingURL=estilos.css.map */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Promotional banner start*/
+  .sitewideBanner {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-size: 250%;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.2s ease-in;
+    display: block;
+    padding: 0.7em 1em;
+    text-align: center;
+    background: $color4:;
+    color: #000000;
+    background-color: $color4:;
+  }
+  /* Promotional banner end */
+  
+  /* NavBar Start */
+  header {
+    background-color: $color2:;
+    color: $color2:;
+    text-align: center;
+  }
+  
+  .navbar a {
+    padding: 10px 20px;
+    transition: background-color 0.8s;
+    border-radius: 10px;
+    transition: font-size 0.3s;
+  }
+  
+  .navbar a:hover {
+    color:$color2:;
+    border-radius: 11px;
+    background-color: $color1:;
+    font-size: 18px;
+  }
+  
+  .navbar .item-5{
+    border: 1px solid $color4:;
+    border-radius: 10px;
+  }
+  
+  .logo img {
+    max-width: 100%; 
+    display: block;
+    margin: 0 auto; 
+  }
+  
+  .navbar {
+    background-color: $color2:; 
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin-right: 20px; 
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: $color1:(
+      0,
+      0,
+      0
+    ); 
+  }
+  
+  /* NavBar end */
+  
+  /* Flip Cards start */
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    padding: 40px 40px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .grid-container {
+      grid-template-rows: repeat(2, 1fr);
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+    }
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid $color2:;
+    vertical-align: middle;
+    perspective: 1000px;
+    display: grid;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: $color2:;
+    color: black;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  .flip-card-back {
+    background-color: $color3:;
+    color: $color2:;
+    transform: rotateY(180deg);
+  }
+  /* Flip Cards ends */
+  
+  /* Home text start */
+  .lux {
+    font-family: "Poppins", sans-serif;
+    padding: 50px 40px;
+    font-size: 1.4em;
+    justify-content: center;
+    align-content: center;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+  }
+  
+  @media screen and (max-width: 714px) {
+    .lux {
+      grid-template-rows: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+    }
+  }
+  
+  .hashtag {
+    padding: 20px 0px;
+    box-sizing: 50%;
+  }
+  
+  .item1{
+    width: 120px;
+    height: 40px;
+    color:$color2: ;
+    background-color: $color1:;
+    line-height: 40px;
+    text-align: center;
+  }
+  
+  .hashtag .item1:hover{
+    background-color: $color4:;
+    transition: 0.2s ease-in;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;  
+    line-height: 120px;
+  }
+  
+  .item2{
+    align-items: flex-end;
+    padding: 20px 0px;
+  }
+  
+  .lux p{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .hometext {
+    font-size:x-large; 
+    line-height: 1.2;
+    padding-left: 15%;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 601px) {
+    div.example {
+      font-size: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    div.example {
+      font-size: 30px;
+    }
+  }
+  /* texto home end */
+  
+  /* Newsletter start */
+  .form-inline {
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  
+  .form-inline label {
+    margin: 5px 10px 5px 0;
+  }
+  
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: $color2:;
+    border: 1px solid $color2:;
+  }
+  
+  .form-inline button {
+    padding: 10px 20px;
+    background-color: $color3:;
+    border: 1px solid $color2:;
+    color: white;
+  }
+  
+  .form-inline button:hover {
+    background-color: $color4:;
+  }
+  
+  .newsletter{
+    font-family: "Poppins", sans-serif;
+    padding: 30px 40px;
+    margin-top: 20px;
+    font-size: 1.4em;
+    justify-content: center;
+    align-content: center;
+    background-color:$color2:b(0, 0, 0);
+  }
+  
+  .newsletter h2{
+    width: 350px;
+    height: 60px;
+    color:$color2: ;
+    background-color: $color1:;
+    line-height: 60px;
+    text-align: center;
+  }
+  
+  .btn {
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: $color1:;
+    color: $color2:;
+    position: relative;
+  }
+  
+  .ribbon {
+    width: 60px;
+    font-size: 14px;
+    padding: 4px;
+    position: absolute;
+    right: -25px;
+    top: -12px;
+    text-align: center;
+    border-radius: 25px;
+    transform: rotate(20deg);
+    background-color: $color4:;
+    color: $color2:;
+  }
+  
+  @media (max-width: 800px) {
+    .form-inline input {
+      margin: 20px 0px;
+    }
+  
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  /* Newsletter end */
+  
+  /*  BIO START */
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+  .w3-row-padding img {margin-bottom: 12px}
+  .bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./img/Bio_main1.jpg');
+    min-height: 100%;
+  }
+  /* BIO END */
+  
+  /* CONTACT START */
+  .image-cutout {
+    background-image: url("./img/cutout_banner.gif");
+    background-size: cover;
+    position: relative;
+    height: 300px;
+  }
+  
+  .text-cutout {
+    background-color: $color2:;
+    color: black;
+    font-size: 10vw; 
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+  }
+  
+  div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: $color4:;
+    padding: 50px;
+    font-size: 20px;
+  }
+  
+  input[type=text-f], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit-f] {
+    background-color: $color3:;
+    color: $color2:;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit-f]:hover {
+    background-color: $color4:;
+  }
+  
+  .container-form {
+    border-radius: 5px;
+    background-color: $color2:;
+    padding: 20px;
+  }
+  /* CONTACT END */
+  
+  /* PRINTS START */
+  
+  .header-prints {
+    text-align: center;
+    padding: 32px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  /* PRINTS ENDS */
+  
+  /* DIGITASL START */
+  
+  /* DIGITAL ENDS */
